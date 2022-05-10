@@ -83,10 +83,10 @@ jobs:
       
   test-backend:
     docker:
-      
+     - image: cimg/node:13.8.0     
     steps:
       - checkout
-  - image: cimg/node:13.8.0    - restore_cache:
+      - restore_cache:
           keys: [backend-deps]
       - run:
           name: Back-end Unit Test
