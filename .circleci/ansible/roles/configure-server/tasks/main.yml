@@ -12,5 +12,5 @@
 - name: "Install PM2 Globally"
   npm:
     name: pm2
-    globabl: yes    
+    global: yes    
     
